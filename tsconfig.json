@@ -6,6 +6,7 @@
     "declaration": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
+    "incremental": false,
     "skipLibCheck": true,
     "strict": true
   },
