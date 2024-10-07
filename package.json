@@ -30,7 +30,7 @@
     "README.md"
   ],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@types/node": "^22.7.4",
     "prettier": "3.3.3",
