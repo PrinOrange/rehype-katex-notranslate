@@ -1,10 +1,10 @@
-import {Element} from 'hast'
+import {Root} from 'hast'
 import {Plugin} from 'unified'
 import {visit} from 'unist-util-visit'
 
-const rehypeKatexNoTranslate: Plugin = () => {
-  return (tree) => {
-    visit(tree, 'element', (node: Element) => {
+const rehypeKatexNoTranslate: Plugin<[], Root> = () => {
+  return (tree: Root) => {
+    visit(tree, 'element', (node) => {
       if (node.tagName !== 'span') return
       const className = node.properties?.className
       if (!className) return
