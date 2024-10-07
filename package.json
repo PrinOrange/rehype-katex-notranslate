@@ -23,7 +23,7 @@
     "prepack": "npm run build && npm run format",
     "build": "tsc --build --clean && tsc --build",
     "format": "npx prettier . --write",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run build && node --test dist/test/index.test.js"
   },
   "files": [
     "dist",
@@ -34,12 +34,14 @@
   "devDependencies": {
     "@types/node": "^22.7.4",
     "prettier": "3.3.3",
+    "prettier-plugin-organize-imports": "^4.1.0",
+    "rehype-parse": "^9.0.1",
+    "rehype-stringify": "^10.0.1",
     "typescript": "^5.6.2"
   },
   "dependencies": {
     "hast": "^0.0.2",
     "hast-util-select": "^6.0.2",
-    "prettier-plugin-organize-imports": "^4.1.0",
     "unified": "^11.0.5"
   }
 }
