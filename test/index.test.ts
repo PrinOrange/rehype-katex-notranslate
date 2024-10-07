@@ -3,7 +3,7 @@ import test from 'node:test'
 import rehypeParse from 'rehype-parse'
 import rehypeStringify from 'rehype-stringify'
 import {unified} from 'unified'
-import rehypeKatexNoTranslate from '../src/index.js'
+import rehypeKatexNoTranslate from '../lib/index.js'
 
 const processHtml = async (html: string) => {
   const file = await unified()
