@@ -1,5 +1,5 @@
-import {Root} from 'hast'
-import {Plugin} from 'unified'
+import type {Root} from 'hast'
+import type {Plugin} from 'unified'
 import {visit} from 'unist-util-visit'
 
 const rehypeKatexNoTranslate: Plugin<[], Root> = () => {
