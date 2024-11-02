@@ -13,10 +13,12 @@
     "rehype",
     "rehype-plugin",
     "plugin",
+    "translate",
+    "translation",
+    "browser",
+    "sanitize",
     "format",
     "fmt",
-    "beautify",
-    "prettify",
     "html"
   ],
   "scripts": {
